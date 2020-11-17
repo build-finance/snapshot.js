@@ -10,13 +10,17 @@
     "@ethersproject/abi": "^5.0.4",
     "@ethersproject/address": "^5.0.4",
     "@ethersproject/contracts": "^5.0.3",
+    "@ethersproject/strings": "^5.0.5",
     "@ethersproject/units": "^5.0.3",
+    "ajv": "^7.0.0-beta.4",
+    "bn.js": "^5.1.3",
     "json-to-graphql-query": "^2.0.0"
   },
   "devDependencies": {
     "@ethersproject/providers": "^5.0.9",
     "@types/node": "^13.9.5",
     "bluebird": "^3.7.2",
+    "cross-fetch": "^3.0.6",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
@@ -31,7 +35,8 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "test": "node test/index.ts",
-    "pretest": "npm run build"
+    "pretest": "npm run build",
+    "lint": "prettier 'src/**/*.ts' -w -c"
   },
   "files": [
     "dist",
